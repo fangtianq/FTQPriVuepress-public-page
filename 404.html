@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
+		<script>self["MonacoEnvironment"] = (function (paths) {
+          return {
+            globalAPI: false,
+            getWorkerUrl : function (moduleId, label) {
+              var result =  paths[label];
+              if (/^((http:)|(https:)|(file:)|(\/\/))/.test(result)) {
+                var currentUrl = String(window.location);
+                var currentOrigin = currentUrl.substr(0, currentUrl.length - window.location.hash.length - window.location.search.length - window.location.pathname.length);
+                if (result.substring(0, currentOrigin.length) !== currentOrigin) {
+                  var js = '/*' + label + '*/importScripts("' + result + '");';
+                  var blob = new Blob([js], { type: 'application/javascript' });
+                  return URL.createObjectURL(blob);
+                }
+              }
+              return result;
+            }
+          };
+        })({
+  "editorWorkerService": "/FTQPriVuepress-public-page/monacoeditorwork/editor.worker.bundle.js",
+  "typescript": "/FTQPriVuepress-public-page/monacoeditorwork/ts.worker.bundle.js",
+  "json": "/FTQPriVuepress-public-page/monacoeditorwork/json.worker.bundle.js",
+  "html": "/FTQPriVuepress-public-page/monacoeditorwork/html.worker.bundle.js",
+  "javascript": "/FTQPriVuepress-public-page/monacoeditorwork/ts.worker.bundle.js",
+  "handlebars": "/FTQPriVuepress-public-page/monacoeditorwork/html.worker.bundle.js",
+  "razor": "/FTQPriVuepress-public-page/monacoeditorwork/html.worker.bundle.js"
+});</script>
+
 		<meta charset="UTF-8" />
 		<link rel="icon" href="/FTQPriVuepress-public-page/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script type="module" crossorigin src="/FTQPriVuepress-public-page/assets/index-4pgTefJg.js"></script>
-		<link rel="stylesheet" crossorigin href="/FTQPriVuepress-public-page/assets/index-CiiPZu7E.css">
+		<script type="module" crossorigin src="/FTQPriVuepress-public-page/assets/index-VCO0n0oV.js"></script>
+		<link rel="stylesheet" crossorigin href="/FTQPriVuepress-public-page/assets/index-CWmfWuwe.css">
 		<script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
 		<script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
 	</head>
@@ -13,7 +40,7 @@
 	<body>
 		<div id="app"></div>
 		<script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
-		<script nomodule crossorigin id="vite-legacy-polyfill" src="/FTQPriVuepress-public-page/assets/polyfills-legacy-DrHMdhi6.js"></script>
-		<script nomodule crossorigin id="vite-legacy-entry" data-src="/FTQPriVuepress-public-page/assets/index-legacy-CfFk8QaH.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+		<script nomodule crossorigin id="vite-legacy-polyfill" src="/FTQPriVuepress-public-page/assets/polyfills-legacy-CJelySpq.js"></script>
+		<script nomodule crossorigin id="vite-legacy-entry" data-src="/FTQPriVuepress-public-page/assets/index-legacy-hDdexsri.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
 	</body>
 </html>

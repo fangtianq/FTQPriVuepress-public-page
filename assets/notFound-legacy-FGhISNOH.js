@@ -1,0 +1,1 @@
+System.register(["./index-legacy-hDdexsri.js"],(function(e,t){"use strict";var r,n,u,i;return{setters:[function(e){r=e._,n=e.o,u=e.E,i=e.C}],execute:function(){e("default",r({},[["render",function(e,t){var r=i("router-view");return n(),u(r)}]]))}}}));
