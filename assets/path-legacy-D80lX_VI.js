@@ -1,0 +1,1 @@
+System.register([],(function(e,r){"use strict";return{execute:function(){e("s",(function(e){return r+e}));var r="/FTQPriVuepress-public-page/".endsWith("/")?"/FTQPriVuepress-public-page/".slice(0,-1):"/FTQPriVuepress-public-page/"}}}));

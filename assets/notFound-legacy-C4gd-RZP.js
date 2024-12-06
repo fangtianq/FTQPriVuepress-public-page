@@ -1,0 +1,1 @@
+System.register(["./index-legacy-DJfSjDaq.js"],(function(e,r){"use strict";var t,n,u,i;return{setters:[function(e){t=e._,n=e.h,u=e.r,i=e.o}],execute:function(){e("default",t({},[["render",function(e,r){var t=u("router-view");return i(),n(t)}]]))}}}));
