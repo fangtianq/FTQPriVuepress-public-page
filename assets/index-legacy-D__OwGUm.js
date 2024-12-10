@@ -1,0 +1,1 @@
+System.register(["./index-legacy-BrvkS0-7.js"],(function(e,t){"use strict";var n,r,u;return{setters:[function(e){n=e._,r=e.o,u=e.c}],execute:function(){e("default",n({},[["render",function(e,t){return r(),u("div",null," 首页 ")}]]))}}}));
