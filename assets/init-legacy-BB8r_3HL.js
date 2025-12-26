@@ -1,0 +1,1 @@
+System.register([],function(e,t){"use strict";return{execute:function(){function t(e,t){switch(arguments.length){case 0:break;case 1:this.range(e);break;default:this.range(t).domain(e)}return this}e("i",t)}}});
