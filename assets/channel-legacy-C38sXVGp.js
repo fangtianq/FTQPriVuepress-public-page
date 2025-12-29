@@ -1,1 +1,0 @@
-System.register(["./本地记事本-legacy-BLIL6wkQ.js"],function(e,t){"use strict";var n,r;return{setters:[function(e){n=e.U,r=e.C}],execute:function(){e("c",function(e,t){return n.lang.round(r.parse(e)[t])})}}});
