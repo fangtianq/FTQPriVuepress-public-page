@@ -1,1 +1,0 @@
-System.register(["./_plugin-vue_export-helper-legacy-fmMplw3F.js","./index-legacy-DkomFvTa.js"],function(e,r){"use strict";var t,n,u,c;return{setters:[function(e){t=e._},function(e){n=e.c,u=e.r,c=e.o}],execute:function(){e("default",t({},[["render",function(e,r){var t=u("router-view");return c(),n(t)}]]))}}});
