@@ -1,1 +1,0 @@
-System.register(["./FileSaver.min-legacy-CnVARfpW.js"],function(e,t){"use strict";var n,c;return{setters:[function(e){n=e._,c=e.d}],execute:function(){e("g",n(function(e,t){var n;return"sandbox"===t&&(n=c("#i"+e)),c("sandbox"===t?n.nodes()[0].contentDocument.body:"body").select('[id="'.concat(e,'"]'))},"getDiagramElement"))}}});
