@@ -1,1 +1,0 @@
-System.register(["./_plugin-vue_export-helper-legacy-fmMplw3F.js","./index-legacy-DPYha23T.js"],function(e,n){"use strict";var t,r,u;return{setters:[function(e){t=e._},function(e){r=e.o,u=e.a}],execute:function(){e("default",t({},[["render",function(e,n){return r(),u("div",null," 首页 ")}]]))}}});
